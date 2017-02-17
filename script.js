@@ -13,7 +13,7 @@ function getRandomColor() {
     return color;
 }
 
-document.getElementById("circle").onclick = function() {
+document.getElementById("shape").onclick = function() {
   var endTime = new Date();
   var timeTaken = (endTime - startTime) / 1000;
   var seconds = Math.round(timeTaken % 60)
@@ -27,12 +27,12 @@ document.getElementById("circle").onclick = function() {
   var width = getRandomInt(5, 200);
   var height = getRandomInt(5, 200);
 
-  document.getElementById("circle").style.top = top + "%";
-  document.getElementById("circle").style.left = left + "%";
-  document.getElementById("circle").style.borderRadius = borderRadius + "px";
-  document.getElementById("circle").style.background = background;
-  document.getElementById("circle").style.height = height;
-  document.getElementById("circle").style.width = width;
+  document.getElementById("shape").style.top = top + "%";
+  document.getElementById("shape").style.left = left + "%";
+  document.getElementById("shape").style.borderRadius = borderRadius + "px";
+  document.getElementById("shape").style.background = background;
+  document.getElementById("shape").style.height = height;
+  document.getElementById("shape").style.width = width;
 }
 
 
