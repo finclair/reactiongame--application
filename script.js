@@ -16,8 +16,8 @@ function getRandomColor() {
 document.getElementById("shape").onclick = function() {
   var endTime = new Date();
   var timeTaken = (endTime - startTime) / 1000;
-  var seconds = Math.round(timeTaken % 60)
-  document.getElementById("timeShown").innerHTML = seconds + "s";
+  
+  document.getElementById("timeShown").innerHTML = timeTaken + "s";
   startTime = endTime;
 
   var top = getRandomInt(0, 85);
